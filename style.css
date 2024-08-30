@@ -50,6 +50,30 @@ header
     
 }
 
+.ham{
+    position: absolute;
+    flex-direction: column;
+    font-size: 3rem;
+    gap: 2rem;
+    top: 9rem;
+    right: 2rem;
+    background-color:  rgb(39, 185, 238);
+    width: 30rem;
+    text-align: center;
+    border-radius: 1rem;
+    padding: 3rem;
+}
+
+.ham button{
+    width: 13rem;
+    color: #000000;
+    background-color: white;
+    border-radius: 1rem;
+    height: 7rem;
+    padding: 1rem;
+
+}
+
 nav a:hover{
     /* text-decoration: underline; */
     color: rgb(39, 185, 238);
@@ -68,7 +92,19 @@ nav button{
 nav button:hover{
     background-color:  rgb(27, 122, 156);;
 }
-
+.hamburger{
+    padding: 2rem;
+    width: 5rem;
+    display: none;
+    flex-direction: column;
+}
+.hamburger span{
+    width: 4rem;
+    background-color: #000000;
+    height: 0.5rem;
+    margin-bottom: 10px;
+    
+}
 /* booking container */
 
 .background {
@@ -282,6 +318,11 @@ a{
     border-radius: 0.5rem;
     width: 12%;
 }
+.service-box-container div div{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
 .service-box-container div img{
     height: 10rem;
     margin-bottom: 1rem;
@@ -373,13 +414,13 @@ a{
     flex-direction: column;
 }
 
-.tit2 {
+.footer-tit2 {
     margin: 0;
     font-size: 24px;
     color: #333;
 }
 
-.tit {
+.footer-tit {
     margin: 0;
     font-size: 16px;
     color: #666;
@@ -414,8 +455,290 @@ a{
     font-size: 2rem;
 }
 
+@media (max-width: 1440px) {
+
+    .ham{
+        display: none;
+    }
+    
+    .book-form {
+        padding: 10rem;
+        padding-top: 3rem;
+    }
+    .about-container{
+        padding: 10rem;
+    }
+    .about-doc h1{
+        font-size: 2rem;
+    }
+    .service-box-container div{
+        width: 15%;
+    }
+    .review-box div{
+        width: 15rem;
+    }
+    .review-box{
+        margin-left: 12rem;
+        margin-right: 12rem;
+    }
+    .review-container hr{
+        margin-bottom: 3rem;
+    }
+}
+@media (max-width: 1024px) {
+    .ham{
+        display: none;
+    }
+    .head{
+        width: 1065px;
+    }
+    .book-form {
+        padding: 0.5rem;
+        margin: 2rem;
+        margin-left: 3rem;
+        /* padding-top: 3rem; */
+    }
+    .background{
+        width: 1070px;
+    }
+    .about-container{
+        margin-top: 10rem;
+        width: 1040px;
+        padding: 2rem;
+        padding-top: 10rem;
+        padding-bottom: 10rem;
+    }
+    .about-doc h1{
+        font-size: 2rem;
+    }
+    .service-container{
+        width: 1089px;
+    }
+    .service-box-container div{
+        width: 18%;
+    }
+    .review-box{
+        margin: 2rem;
+        margin-left: 10rem;
+    }
+    .footer{
+        width: 1060px;
+    }
+    /* .footer-tit2{
+        font-size: 2rem;
+    }
+    .footer-tit{
+        font-size: 8px;
+    } */
+
+
+
+}
 @media (max-width: 768px) {
-    .box {
-        flex: 1 1 100%;
+    .ham{
+        display: none;
+    }
+    
+    .book-form {
+        width: 968px;
+        padding: 0.5rem;
+        margin: 2rem;
+        margin-left: 3rem;
+        /* padding-top: 3rem; */
+    }
+    .background{
+        width: 1070px;
+    }
+    .about-container{
+        margin-top: 10rem;
+        width: 1040px;
+        padding: 2rem;
+        padding-top: 10rem;
+        padding-bottom: 10rem;
+    }
+    .about-doc h1{
+        font-size: 2rem;
+    }
+    .service-container{
+        width: 1089px;
+    }
+    .service-box-container div{
+        width: 18%;
+    }
+    .review-container{
+        width: 1070px;
+    }
+    .review-box{
+        margin: 2rem;
+        margin-left: 10rem;
+    }
+    .footer{
+        width: 1060px;
+    }
+    .footer-tit2{
+        font-size: 2rem;
+    }
+   
+}
+.ham-hide{
+    display: none;
+}
+.ham-visible{
+    display: flex;
+}
+@media (max-width: 425px) {
+    .head{
+        height: 9rem;
+        justify-content: space-between;
+    }
+    .hamburger{
+        display: flex;
+    }
+    .navbar{
+        display: none;
+    }
+    
+    .logo-img{
+        height: 6rem;
+        width: 5.5rem;
+    }
+    .tit2{
+        font-size: 3rem;
+    }
+    .tit{
+        font-size: 1.8rem;
+        margin-top: 4px;
+    }
+    .book-form{
+        flex-direction: column;
+        text-align: center;
+        height: 100%;
+        margin:10rem 3rem ;
+    }
+    .background{
+        display: none;
+    }
+    hr{
+        width: 60%;
+        margin-left: 14rem;
+    }
+    .book-h4{
+        font-size: 4rem;
+    }
+    .book-h1{
+        font-size: 5.5rem;
+    }
+    .form-container{
+        height: 600px;
+        width: 799px;
+        padding: 5rem 0;
+    }
+    .form-h3{
+        font-size: 3.5rem;
+    }
+    .input-name{
+        flex-direction: column;
+        gap: 0;
+    }
+    .form input{
+        height: 3.5rem;
+        width: 500px;
+        font-size: 1.5rem;
+    }
+    form textarea{
+        height: 3.5rem;
+        font-size: 1.5rem;
+    }
+    form button {
+        height: 3rem;
+        font-size: 1.5rem;
+    }
+
+    .about-container{
+        flex-direction: column-reverse;
+        font-size: 3rem;
+        text-align: center;
+    }
+    .about-doc p,button{
+        padding: 0;
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+    .about-img{
+        height: 45rem;
+    }
+
+    .service-container h3,h1{
+        font-size: 3rem;
+    }
+    .service-box-container{
+        flex-direction: column;
+    }
+    .service-box-container div{
+        width: 70%;
+        margin-left: 6rem;        
+        display: flex;
+        gap: 2rem;
+    }
+    .service-box-container div div{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+    }
+    .service-box-container div div h2{
+        font-size: 2.5rem;
+    }
+    .service-box-container  div div p{
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+    .service-box-container div img{
+        width: 30rem;
+        height: 15rem;
+    }
+    #btn-service {
+        width: 13rem;
+        height: 6rem;
+    }
+
+    .review-container h1{
+        font-size: 3rem;
+    }
+    .review-container hr{
+        width: 30rem;
+        margin-left: 0;
+        margin-top: 3rem;
+    }
+    .review-box{
+        flex-direction: column;
+        width: 50rem;
+        margin: 0;
+    }
+    .review-box div img{
+        height: 10rem;
+        width: 10rem;
+    }
+    .review-box div {
+        display: flex;
+        width: 50rem;
+    }
+    .review-box div div{
+        display: flex;
+        flex-direction: column;
+         
+        gap: 0;
+        margin: 0;
+        padding: 0;
+    }
+    .review-box div div h2{
+        font-size: 3rem;
+        margin-top: 1rem;
+        /* text-align: center; */
+        /* margin-left: 3.5rem; */
+    }
+    .review-box div div p{
+        font-size: 2rem;
+        line-height: 2.5rem;
     }
 }
