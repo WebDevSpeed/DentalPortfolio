@@ -586,7 +586,7 @@ a{
 .ham-visible{
     display: flex;
 }
-@media (max-width: 425px) {
+@media (max-width: 768px) {
     .head{
         height: 9rem;
         justify-content: space-between;
